@@ -5,6 +5,7 @@
  * Date: 24.11.17
  * Time: 12:47
  */
+
 include ("dbInfo.php");
 class dbController{
 /*
@@ -15,6 +16,7 @@ class dbController{
     private $db_pass = "";
     private $db_name = "";
     private $connectStatus = null;
+
 
 /*
 * Connect to database function.
@@ -29,7 +31,7 @@ class dbController{
 * Database disconnect function.
 */
     public function disconnect(){
-
+    echo 'TEST';
         /*if($this->connectStatus){
             if(@mysqli_close()){
                 $this->connectStatus = false;
